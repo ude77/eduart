@@ -1,1 +1,1 @@
-# eduart
+# EduArt
