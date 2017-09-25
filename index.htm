@@ -183,10 +183,10 @@
   .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #f4511e;
+      color:  #009933;
   }
   .logo-small {
-      color: #f4511e;
+      color: #009933;
       font-size: 50px;
   }
   </style>
@@ -275,13 +275,13 @@
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-scissors logo-small"></span>
-      <h4>PODA</h4>
-      <p>Poda de jardins</p>
+      <h4>PODA I MANTENIMENT</h4>
+      <p>Poda i manteniment de jardins</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-grain logo-small"></span>
-      <h4>FITOSANITARIS</h4>
-      <p>Tractaments fitosanitaris</p>
+      <span class="glyphicon glyphicon-pencil logo-small"></span>
+      <h4>DISSENY I CONSTRUCCIÓ DE JARDINS</h4>
+      <p>Disseny del jardi al teu gust</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-tree-conifer logo-small"></span>
@@ -292,38 +292,37 @@
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
+      <span class="glyphicon glyphicon-mosquito logo-small"></span>
+      <h4>FITOSANITARIS</h4>
+      <p>Tractaments fitosanitaris i d'herbicides</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-tint logo-small"></span>
+      <h4>REG</h4>
+      <p>Disseny de sistemes de reg automàtics i instal·lació. Reparació d'averíes</p>
+    </div>
+   <div class="col-sm-4">
       <span class="glyphicon glyphicon-trash logo-small"></span>
       <h4>DESBROSSAMENT</h4>
-      <p>Desborssament de jardins</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4>REG</h4>
-      <p>Sistemes de reg</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4 style="color:#303030;">GESPA</h4>
-      <p>Natural i artificial</p>
+      <p>Desborssament de jardins i terrenys en general</p>
     </div>
   </div>
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-trash logo-small"></span>
-      <h4>DESBROSSAMENT</h4>
-      <p>Desborssament de jardins</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4>REG</h4>
-      <p>Sistemes de reg</p>
-    </div>
+      <h4>GESPA ARTIFICIAL</h4>
+      <p>Tot típus de gammes, informa't</p>
+     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
       <h4 style="color:#303030;">GESPA</h4>
-      <p>Natural i artificial</p>
-    </div>
+      <p>Gramínies i gespes</p>
+   </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-import logo-small"></span>
+      <h4>NETEGES A PRESIÓ</h4>
+      <p>Neteja de patis/empedrats. Renova la pedra envellida</p>   	  
   </div>
 </div>
   
@@ -414,16 +413,12 @@ $(document).ready(function(){
   
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -439,7 +434,6 @@ $(document).ready(function(){
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
