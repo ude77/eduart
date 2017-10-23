@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <title>EduArt Jardins</title>
   <meta charset="utf-8">
@@ -10,6 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next/i18next.js"></script>
+  <script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+  <script type="text/javascript" src="index.js"></script>
   <style>
   body {
       font: 400 15px/1.8 Lato, sans-serif;
@@ -199,8 +204,8 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<nav class="navbar navbar-default navbar-fixed-top">
+<!-- Nav bar -->
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -212,17 +217,25 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">INICI</a></li>
-        <li><a href="#quisoc">QUI SÓC?</a></li>
-		<li><a href="#serveis">SERVEIS</a></li>
-		<li><a href="#galeria">GALERIA</a></li>
-        <li><a href="#contact">CONTACTE</a></li>
+        <li><a href="#myPage" data-i18n="nav.home"></a></li>
+        <li><a href="#who" data-i18n="nav.who"></a></li>
+		<li><a href="#services" data-i18n="nav.services"></a></li>
+		<!--<li><a href="#gallery" data-i18n="nav.gallery"></a></li>-->
+        <li><a href="#contact" data-i18n="nav.contact"></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-i18n="nav.language"><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#" onclick="i18next.changeLanguage('ca')" data-i18n="nav.catalan"></a></li>
+            <li><a href="#" onclick="i18next.changeLanguage('es')" data-i18n="nav.spanish"></a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Carousel -->
+<div id="carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -235,24 +248,24 @@
       <div class="item active">
         <img src="http://www.westminster-abbey.org/__data/assets/thumbnail/0019/103717/Westminster-Abbey-Gardens.jpg" alt="Jardí 1" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Manteniment de jardins</h3>
-          <p>Per tenir el jardí dels teus somnis</p>
+          <h3 data-i18n="carousel.first.title"></h3>
+          <p data-i18n="carousel.first.text"></p>
         </div>      
       </div>
 
       <div class="item">
         <img src="http://www.lempsink.co.uk/Images/Homepage/Garden-Design-6.jpg" alt="Jardí 2" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Tractaments fitosanitaris</h3>
-          <p>La salut de les plantes és el primer</p>
+          <h3 data-i18n="carousel.second.title"></h3>
+          <p data-i18n="carousel.second.text"></p>
         </div>      
       </div>
     
       <div class="item">
         <img src="http://www.artistic-law.com/wp-content/uploads/2017/08/garden-design-with-edinburgh-lempsink-planting-east-french-planning-your.jpg" alt="Jardí 3" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Gespa Artificial</h3>
-          <p>Per tenir la gespa desitjada tot l'any</p>
+          <h3 data-i18n="carousel.third.title"></h3>
+          <p data-i18n="carousel.third.text"></p>
         </div>      
       </div>
     </div>
@@ -260,139 +273,117 @@
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="sr-only" data-i18n="carousel.previous"></span>
     </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only" data-i18n="carousel.next"></span>
     </a>
 </div>
 
-<!-- Container (The Band Section) -->
-<div id="quisoc" class="container text-center">
-  <h3>QUI SÓC</h3>
-  <p><em>coneix-me</em></p>
-  <p>Sóc l’Eduard Maristany Ramos, de vocació jardiner. Dic de vocació perque quan era petit ja tenia admiració pel món de la natura. Això em va motivar per a fer els estudis en Gestió i Organització de Recursos Naturals i Paisatgístics, a Solsona, per profunditzar en la matèria i coneixer mes detalladament el mon vegetal. M’agrada col·laborar en el manteniment dels espais verds, ja siguin públics o privats. Un dels meus objectius es tractar l’individualitat de cada espècie com necessita, i dibuixar una armonía en el conjunt del jardí.</p>
+<!-- Who am i -->
+<div id="who" class="container text-center">
+  <h3 data-i18n="who.title"></h3>
+  <p><em data-i18n="who.knowme"></em></p>
+  <p data-i18n="who.desc"></p>
 </div>
 
-<!-- Container (Services Section) -->
-<div id="serveis" class="container text-center">
-  <h3>SERVEIS</h3>
+<!-- Services -->
+<div id="services" class="container text-center">
+  <h3 data-i18n="services.title"></h3>
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-scissors logo-small"></span>
-      <h4>PODA I MANTENIMENT</h4>
-      <p>Poda i manteniment de jardins</p>
+      <h4 data-i18n="services.first.title"></h4>
+      <p data-i18n="services.first.text"></p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-pencil logo-small"></span>
-      <h4>DISSENY I CONSTRUCCIÓ DE JARDINS</h4>
-      <p>Disseny del jardi al teu gust</p>
+      <h4 data-i18n="services.second.title"></h4>
+      <p data-i18n="services.second.text"></p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-tree-conifer logo-small"></span>
-      <h4>PLANTACIÓ</h4>
-      <p>Tot tipus d'espècies</p>
+      <h4 data-i18n="services.third.title"></h4>
+      <p data-i18n="services.third.text"></p>
     </div>
   </div>
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-mosquito logo-small"></span>
-      <h4>FITOSANITARIS</h4>
-      <p>Tractaments fitosanitaris i d'herbicides</p>
+      <h4 data-i18n="services.fourth.title"></h4>
+      <p data-i18n="services.fourth.text"></p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-tint logo-small"></span>
-      <h4>REG</h4>
-      <p>Disseny de sistemes de reg automàtics i instal·lació. Reparació d'averíes</p>
+      <h4 data-i18n="services.fifth.title"></h4>
+      <p data-i18n="services.fifth.text"></p>
     </div>
    <div class="col-sm-4">
       <span class="glyphicon glyphicon-trash logo-small"></span>
-      <h4>DESBROSSAMENT</h4>
-      <p>Desborssament de jardins i terrenys en general</p>
+      <h4 data-i18n="services.sixth.title"></h4>
+      <p data-i18n="services.sixth.text"></p>
     </div>
   </div>
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-trash logo-small"></span>
-      <h4>GESPA ARTIFICIAL</h4>
-      <p>Tot típus de gammes, informa't</p>
+      <h4 data-i18n="services.seventh.title"></h4>
+      <p data-i18n="services.seventh.text"></p>
      </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4 style="color:#303030;">GESPA</h4>
-      <p>Gramínies i gespes</p>
+      <h4 data-i18n="services.eighth.title"></h4>
+      <p data-i18n="services.eighth.text"></p>
    </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-import logo-small"></span>
-      <h4>NETEGES A PRESIÓ</h4>
-      <p>Neteja de patis/empedrats. Renova la pedra envellida</p>   	  
+      <h4 data-i18n="services.ninth.title"></h4>
+      <p data-i18n="services.ninth.text"></p>
 	</div>
   </div>
 </div>
   
-<!-- Container (Portfolio Section) -->
-<div id="galeria" class="container text-center">
-  <h3>GALERIA</h3><br>
+<!-- Gallery (unused atm) -->
+<!-- <div id="gallery" class="container text-center">
+  <h3 data-i18n="gallery.title"></h3>GALERIA<br>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="http://www.indavi.es/app/uploads/2016/11/CURSO-FITOSANITARIO-BASICO-INDAVI-400x300.jpg" alt="Fito" width="400" height="300">
-        <p><strong>Fito</strong></p>
-        <p>Blablabla fito</p>
+        <p><strong data-i18n="gallery.first.title">Fito</strong></p>
+        <p data-i18n="gallery.first.text">Blablabla fito</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="http://www.iniap.gob.ec/nsite/images/stories/noticias/seminario%20cacao%20sd.jpg" alt="Poda" width="400" height="300">
-        <p><strong>Poda</strong></p>
-        <p>Blablabla poda</p>
+        <p><strong data-i18n="gallery.second.title">Poda</strong></p>
+        <p data-i18n="gallery.second.text">Blablabla poda</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="http://www.arqhys.com/construccion/fotos/construccion/Sistemas-de-riego.jpg" alt="Reg" width="400" height="300">
-        <p><strong>Sistemes de reg</strong></p>
-        <p>Blablabla reg</p>
+        <p><strong data-i18n="gallery.third.title">Sistemes de reg</strong></p>
+        <p data-i18n="gallery.third.text">Blablabla reg</p>
       </div>
 	</div><br>
   </div>
 </div>
+-->
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-	<h3 class="text-center">CONTACTE</h3>
-	<div class="jumbotron">
-	  <div class="row">
-		  <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
-			  <img width="250" height="350" src="https://scontent.fmad3-3.fna.fbcdn.net/v/t1.0-9/1000072_10151650318830699_1861841553_n.jpg?oh=1ea6ef86aa23044c19b9350e00981486&oe=5A509D6B" alt="stack photo" class="img">
-		  </div>
-		  <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
-			  <div style="border-bottom:1px solid black">
-				<h2>Eduard Maristany</h2>
-			  </div>
-				<hr>
-			  <ul class="details">
-				<li><p><span class="glyphicon glyphicon-earphone one" style="width:50px;"></span>+34 610096843</p></li>
-				<li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span>eduard.maristany.ramos@gmail.com</p></li>
-				<li><p><span class="glyphicon glyphicon-map-marker one" style="width:50px;"></span>08700 Igualada, Barcelona</p></li>
-			  </ul>
-		  </div>
-	  </div>
-	</div>
-</div>
-  
-<!-- Container (Contact Section) -->
-<div id="contact" class="container">
-  <h3 class="text-center">CONTACTE</h3>
+  <h3 class="text-center" data-i18n="contact.title"></h3>
   <div class="row">
     <div class="col-md-4">
-      <p><span class="glyphicon glyphicon-map-marker"></span>Igualada, Cp:08700</p>
-      <p><span class="glyphicon glyphicon-phone"></span>610096843</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: eduard.maristany.ramos@gmail.com</p>
+      <p data-i18n="contact.city"><span class="glyphicon glyphicon-map-marker"></span></p>
+      <p data-i18n="contact.phone"><span class="glyphicon glyphicon-phone"></span></p>
+      <p data-i18n="contact.mail"><span class="glyphicon glyphicon-envelope"></span></p>
     </div>
     <div class="col-md-8">
       <div class="row">
@@ -414,67 +405,16 @@
   </div>
 </div>
 
-<!-- Add Google Maps -->
+<!-- myMap callback is on index.js-->
 <div id="googleMap"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.584809, 1.621299);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVv4VoKY_vH6109o0Nz1vwKzEDJbNFDMI&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 <!-- Footer -->
-<footer class="text-center">
+<footer id="footer" class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
 </footer>
-
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-  
-})
-</script>
 
 </body>
 </html>

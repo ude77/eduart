@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "INICIO",
+    "who": "¿QUIÉN SOY?",
+    "services": "SERVICIOS",
+    "gallery": "GALERIA",
+    "contact": "CONTACTO",
+    "language": "IDIOMA",
+    "catalan": "CATALÁN",
+    "spanish": "CASTELLANO"
+  },
+  "carousel": {
+    "first": {
+      "title": "Mantenimento de jardines",
+      "text": "Para tener el jardín de tus sueños"
+    },
+    "second": {
+      "title": "Tratamientos fitosanitarios",
+      "text": "La salud de las plantas es lo primero"
+    },
+    "third": {
+      "title": "Hierba artificial",
+      "text": "Para tener la hierba deseada todo el año"
+    },
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "who": {
+    "title": "QUI SÓC?",
+    "knowme": "coneix-me",
+    "desc": "Sóc l’Eduard Maristany Ramos, de vocació jardiner. Dic de vocació perque quan era petit ja tenia admiració pel món de la natura. Això em va motivar per a fer els estudis en Gestió i Organització de Recursos Naturals i Paisatgístics, a Solsona, per profunditzar en la matèria i coneixer mes detalladament el mon vegetal. M’agrada col·laborar en el manteniment dels espais verds, ja siguin públics o privats. Un dels meus objectius es tractar l’individualitat de cada espècie com necessita, i dibuixar una armonía en el conjunt del jardí."
+  },
+  "services": {
+    "title": "SERVEIS",
+    "first": {
+      "title": "PODA I MANTENIMENT",
+      "text": "Poda i manteniment de jardins"
+    },
+    "second": {
+      "title": "DISSENY I CONSTRUCCIÓ DE JARDINS",
+      "text": "Disseny del jardi al teu gust"
+    },
+    "third": {
+      "title": "PLANTACIÓ",
+      "text": "Tot tipus d'espècies"
+    },
+    "fourth": {
+      "title": "FITOSANITARIS",
+      "text": "Tractaments fitosanitaris i d'herbicides"
+    },
+    "fifth": {
+      "title": "REG",
+      "text": "Disseny de sistemes de reg automàtics i instal·lació. Reparació d'averíes"
+    },
+    "sixth": {
+      "title": "DESBROSSAMENT",
+      "text": "Desborssament de jardins i terrenys en general"
+    },
+    "seventh": {
+      "title": "GESPA ARTIFICIAL",
+      "text": "Tot típus de gammes, informa't"
+    },
+    "eighth": {
+      "title": "GESPA",
+      "text": "Gramínies i gespes"
+    },
+    "ninth": {
+      "title": "NETEGES A PRESIÓ",
+      "text": "Neteja de patis/empedrats. Renova la pedra envellida"
+    }
+  },
+  "contact": {
+    "title": "CONTACTE",
+    "city": "Igualada, Codi Postal: 08700",
+    "phone": "+34 610096843",
+    "mail": "eduard.maristany.ramos@gmail.com"
+  }
+}
