@@ -6,73 +6,70 @@
     "gallery": "GALERIA",
     "contact": "CONTACTO",
     "language": "IDIOMA",
-    "catalan": "CATALÁN",
+    "catalan": "CATALÀ",
     "spanish": "CASTELLANO"
   },
   "carousel": {
     "first": {
-      "title": "Mantenimento de jardines",
-      "text": "Para tener el jardín de tus sueños"
+      "title": "Hosteleria",
+      "text": "Tus clientes rodeados de naturaleza"
     },
     "second": {
-      "title": "Tratamientos fitosanitarios",
-      "text": "La salud de las plantas es lo primero"
+      "title": "Comunidades",
+      "text": "Mantenimiento de comunidades todo el año"
     },
     "third": {
-      "title": "Hierba artificial",
-      "text": "Para tener la hierba deseada todo el año"
+      "title": "Particulares",
+      "text": "Para tener el jardín de tus sueños"
     },
     "previous": "Anterior",
     "next": "Siguiente"
   },
   "who": {
-    "title": "QUI SÓC?",
-    "knowme": "coneix-me",
-    "desc": "Sóc l’Eduard Maristany Ramos, de vocació jardiner. Dic de vocació perque quan era petit ja tenia admiració pel món de la natura. Això em va motivar per a fer els estudis en Gestió i Organització de Recursos Naturals i Paisatgístics, a Solsona, per profunditzar en la matèria i coneixer mes detalladament el mon vegetal. M’agrada col·laborar en el manteniment dels espais verds, ja siguin públics o privats. Un dels meus objectius es tractar l’individualitat de cada espècie com necessita, i dibuixar una armonía en el conjunt del jardí."
+    "title": "¿QUIÉN SOY?",
+    "knowme": "conóceme",
+    "desc": "Soy Eduard Maristany Ramos, jardinero de vocación. Y digo de vocación porqué desde pequeño ya admiraba la naturaleza. Esto me motivo para realizar los estudios en Gestión y Organización de Recursos Naturales y Paisajísticos, en Solsona, para profundizar en la materia y conocer detalladamente el mundo vegetal. Me gusta colaborar con el mantenimiento de espacios verdes, sean públicos o privados. Uno de mis objetivos es tratar la individualidad de cada especie como necesita, y dibujar una harmonia en el conjunto del jardín"
   },
   "services": {
     "title": "SERVEIS",
     "first": {
-      "title": "PODA I MANTENIMENT",
-      "text": "Poda i manteniment de jardins"
+      "title": "PODA Y MANTENIMENTO",
+      "text": "Poda y mantenimento de jardines"
     },
     "second": {
-      "title": "DISSENY I CONSTRUCCIÓ DE JARDINS",
-      "text": "Disseny del jardi al teu gust"
+      "title": "DISEÑO Y CONSTRUCCIÓN DE JARDÍN",
+      "text": "Diseño del jardín a tu gusto"
     },
     "third": {
-      "title": "PLANTACIÓ",
-      "text": "Tot tipus d'espècies"
+      "title": "PLANTACIÓN",
+      "text": "Todo tipo de especies"
     },
     "fourth": {
-      "title": "FITOSANITARIS",
-      "text": "Tractaments fitosanitaris i d'herbicides"
+      "title": "FITOSANITARIOS",
+      "text": "Tratamientos fitosanitarios y de herbicidas"
     },
     "fifth": {
-      "title": "REG",
-      "text": "Disseny de sistemes de reg automàtics i instal·lació. Reparació d'averíes"
+      "title": "RIEGO",
+      "text": "Diseño de sistemas de riego automáticos e instalación. Reparación de averias"
     },
     "sixth": {
-      "title": "DESBROSSAMENT",
-      "text": "Desborssament de jardins i terrenys en general"
+      "title": "Desbroce",
+      "text": "Desbroce de jardines y terrenos de cualquier tipo"
     },
     "seventh": {
-      "title": "GESPA ARTIFICIAL",
-      "text": "Tot típus de gammes, informa't"
+      "title": "HIERBA ARTIFICIAL",
+      "text": "Todo tipo de gamas, infórmate"
     },
     "eighth": {
-      "title": "GESPA",
-      "text": "Gramínies i gespes"
+      "title": "HIERBA NATURAL",
+      "text": "Gramínias y hierbas"
     },
     "ninth": {
-      "title": "NETEGES A PRESIÓ",
-      "text": "Neteja de patis/empedrats. Renova la pedra envellida"
+      "title": "LIMPIEZAS A PRESIÓN",
+      "text": "Limpieza de patios. Renueva la piedra envejecida"
     }
   },
   "contact": {
-    "title": "CONTACTE",
-    "city": "Igualada, Codi Postal: 08700",
-    "phone": "+34 610096843",
-    "mail": "eduard.maristany.ramos@gmail.com"
+    "title": "CONTACTO"
   }
 }

@@ -39,6 +39,11 @@ function myMap() {
     var mapProp = {center:myCenter, zoom:12, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
     var marker = new google.maps.Marker({position:myCenter});
+    google.maps.event.addListener(marker, 'click', function () {
+        window.open(
+            "https://www.google.com/maps/search/?api=1&query=41.584809,1.621299",
+            "_blank");
+    });
     marker.setMap(map);
 }
 

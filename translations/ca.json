@@ -11,16 +11,16 @@
   },
   "carousel": {
     "first": {
-      "title": "Manteniment de jardins",
-      "text": "Per tenir el jardí dels teus somnis"
+      "title": "Hosteleria",
+      "text": "Els teus clients rodejats de naturalesa"
     },
     "second": {
-      "title": "Tractaments fitosanitaris",
-      "text": "La salut de les plantes és el primer"
+      "title": "Comunitats",
+      "text": "Manteniment de comunitats tot l'any"
     },
     "third": {
-      "title": "Gespa Artificial",
-      "text": "Per tenir la gespa desitjada tot l'any"
+      "title": "Particulars",
+      "text": "Per tenir el jardí dels teus somnis"
     },
     "previous": "Anterior",
     "next": "Següent"
@@ -61,7 +61,7 @@
       "text": "Tot típus de gammes, informa't"
     },
     "eighth": {
-      "title": "GESPA",
+      "title": "GESPA NATURAL",
       "text": "Gramínies i gespes"
     },
     "ninth": {
@@ -70,9 +70,6 @@
     }
   },
   "contact": {
-    "title": "CONTACTE",
-    "city": "Igualada, Codi Postal: 08700",
-    "phone": "+34 610096843",
-    "mail": "eduard.maristany.ramos@gmail.com"
+    "title": "CONTACTE"
   }
 }

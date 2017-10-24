@@ -2,12 +2,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>EduArt Jardins</title>
+  <title>EduArt Jardins | Jardiner Igualada</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EduArt Jardins | Jardiner Igualada">
+  <meta name="keywords" content="jardiner,jardinero,igualada">
+  <meta name="author" content="Eduard Maristany Ramos">
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
@@ -44,6 +49,9 @@
       /*filter: grayscale(90%); *//* make all photos black and white */ 
       width: 100%; /* Set width to 100% */
       margin: auto;
+  }
+  .carousel-caption {
+    background: rgba(50, 50, 50, .8);
   }
   .carousel-caption h3 {
       color: #fff !important;
@@ -101,8 +109,6 @@
   #googleMap {
       width: 100%;
       height: 400px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
   }  
   .navbar {
       font-family: Montserrat, sans-serif;
@@ -135,7 +141,7 @@
       color: #000 !important;
   }
   .dropdown-menu li a:hover {
-      background-color: red !important;
+      background-color: #009933 !important;
   }
   footer {
       background-color: #2d2d30;
@@ -203,7 +209,7 @@
     }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 <!-- Nav bar -->
 <nav id="nav" class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -213,11 +219,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-         <a class="navbar-brand" href="#myPage"><img class="logo" alt="logo" src="./images/logoedu.png"></a>
+         <a class="navbar-brand" href="#home"><img class="logo" alt="logo" src="./images/logoedu.png"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage" data-i18n="nav.home"></a></li>
+        <li><a href="#home" data-i18n="nav.home"></a></li>
         <li><a href="#who" data-i18n="nav.who"></a></li>
 		<li><a href="#services" data-i18n="nav.services"></a></li>
 		<!--<li><a href="#gallery" data-i18n="nav.gallery"></a></li>-->
@@ -246,7 +252,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="http://www.westminster-abbey.org/__data/assets/thumbnail/0019/103717/Westminster-Abbey-Gardens.jpg" alt="Jardí 1" width="1200" height="700">
+        <img src="https://www.edinburgh.com.au/assets/homepage/_resampled/CroppedFocusedImageWyIxNjAwIiwiNDAwIiwieSIsMjUyXQ/Ed2016-07C-1600pix-wide-96dpi.jpg" alt="Hosteleria">
         <div class="carousel-caption">
           <h3 data-i18n="carousel.first.title"></h3>
           <p data-i18n="carousel.first.text"></p>
@@ -254,7 +260,7 @@
       </div>
 
       <div class="item">
-        <img src="http://www.lempsink.co.uk/Images/Homepage/Garden-Design-6.jpg" alt="Jardí 2" width="1200" height="700">
+        <img src="https://www.rickittpartnership.co.uk/media/1023/green-lawn.jpg?center=0.42964824120603012,0.49833333333333335&mode=crop&width=1600&height=400&rnd=131463297800000000" alt="Comunitats">
         <div class="carousel-caption">
           <h3 data-i18n="carousel.second.title"></h3>
           <p data-i18n="carousel.second.text"></p>
@@ -262,7 +268,7 @@
       </div>
     
       <div class="item">
-        <img src="http://www.artistic-law.com/wp-content/uploads/2017/08/garden-design-with-edinburgh-lempsink-planting-east-french-planning-your.jpg" alt="Jardí 3" width="1200" height="700">
+        <img src="https://www.fairfaxcounty.gov/parks/greenspring/images/banner12.jpg" alt="Particulars">
         <div class="carousel-caption">
           <h3 data-i18n="carousel.third.title"></h3>
           <p data-i18n="carousel.third.text"></p>
@@ -294,17 +300,17 @@
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-scissors logo-small"></span>
+      <span class="fa fa-scissors logo-small"></span>
       <h4 data-i18n="services.first.title"></h4>
       <p data-i18n="services.first.text"></p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-pencil logo-small"></span>
+      <span class="fa fa-pencil logo-small"></span>
       <h4 data-i18n="services.second.title"></h4>
       <p data-i18n="services.second.text"></p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-tree-conifer logo-small"></span>
+      <span class="fa fa-tree logo-small"></span>
       <h4 data-i18n="services.third.title"></h4>
       <p data-i18n="services.third.text"></p>
     </div>
@@ -312,17 +318,17 @@
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-mosquito logo-small"></span>
+      <span class="fa fa-bug logo-small"></span>
       <h4 data-i18n="services.fourth.title"></h4>
       <p data-i18n="services.fourth.text"></p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-tint logo-small"></span>
+      <span class="fa fa-tint logo-small"></span>
       <h4 data-i18n="services.fifth.title"></h4>
       <p data-i18n="services.fifth.text"></p>
     </div>
    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-trash logo-small"></span>
+      <span class="fa fa-trash logo-small"></span>
       <h4 data-i18n="services.sixth.title"></h4>
       <p data-i18n="services.sixth.text"></p>
     </div>
@@ -330,17 +336,17 @@
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-trash logo-small"></span>
+      <span class="fa fa-pagelines logo-small"></span>
       <h4 data-i18n="services.seventh.title"></h4>
       <p data-i18n="services.seventh.text"></p>
      </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <span class="fa fa-leaf logo-small"></span>
       <h4 data-i18n="services.eighth.title"></h4>
       <p data-i18n="services.eighth.text"></p>
    </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-import logo-small"></span>
+      <span class="fa fa-shower logo-small"></span>
       <h4 data-i18n="services.ninth.title"></h4>
       <p data-i18n="services.ninth.text"></p>
 	</div>
@@ -376,31 +382,14 @@
 </div>
 -->
 
-<!-- Container (Contact Section) -->
+<!-- Contact -->
 <div id="contact" class="container">
   <h3 class="text-center" data-i18n="contact.title"></h3>
   <div class="row">
-    <div class="col-md-4">
-      <p data-i18n="contact.city"><span class="glyphicon glyphicon-map-marker"></span></p>
-      <p data-i18n="contact.phone"><span class="glyphicon glyphicon-phone"></span></p>
-      <p data-i18n="contact.mail"><span class="glyphicon glyphicon-envelope"></span></p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-       
-        </div>
-        <div class="col-sm-6 form-group">
-        
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-        </div>
-      </div>
-    </div>
-
+    <div class="col-sm-7 col-sm-offset-4">
+      <a href="tel:610096843"><p><span class="glyphicon glyphicon-phone"></span> 610096843</p></a>
+      <a href="mailto:eduard.maristany.ramos@gmail.com"><p><span class="glyphicon glyphicon-envelope"></span> eduard.maristany.ramos@gmail.com</p></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=41.584809,1.621299" target="_blank"><p><span class="glyphicon glyphicon-map-marker"></span> Igualada, 08700, Barcelona</p></a>
     </div>
   </div>
 </div>
@@ -411,7 +400,7 @@
 
 <!-- Footer -->
 <footer id="footer" class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+  <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
 </footer>
