@@ -73,7 +73,7 @@ i18next
     .use(i18nextBrowserLanguageDetector)
     .init({
         fallbackLng: 'es',
-        debug: true,
+        debug: false,
         backend: {
             loadPath: './translations/{{lng}}.json',
             crossDomain: true
