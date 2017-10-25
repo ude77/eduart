@@ -49,7 +49,7 @@ function myMap() {
 
 var detectorOptions = {
     // order and from where user language should be detected
-    order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
+    order: ['querystring', 'cookie', 'localStorage', 'htmlTag', 'navigator'],
 
     // keys or params to lookup language from
     lookupQuerystring: 'lang',
@@ -72,7 +72,7 @@ i18next
     .use(i18nextXHRBackend)
     .use(i18nextBrowserLanguageDetector)
     .init({
-        fallbackLng: 'es',
+        fallbackLng: 'ca',
         debug: false,
         backend: {
             loadPath: './translations/{{lng}}.json',
