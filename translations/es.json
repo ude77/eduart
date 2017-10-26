@@ -3,7 +3,7 @@
     "home": "INICIO",
     "who": "¿QUIÉN SOY?",
     "services": "SERVICIOS",
-    "gallery": "GALERIA",
+    "gallery": "GALERÍA",
     "contact": "CONTACTO",
     "language": "IDIOMA",
     "catalan": "CATALÀ",
@@ -11,7 +11,7 @@
   },
   "carousel": {
     "first": {
-      "title": "Hosteleria",
+      "title": "Hostelería",
       "text": "Tus clientes rodeados de naturaleza"
     },
     "second": {
@@ -27,8 +27,8 @@
   },
   "who": {
     "title": "¿QUIÉN SOY?",
-    "knowme": "conóceme",
-    "desc": "Soy Eduard Maristany Ramos, jardinero de vocación. Y digo de vocación porqué desde pequeño ya admiraba la naturaleza. Esto me motivo para realizar los estudios en Gestión y Organización de Recursos Naturales y Paisajísticos, en Solsona, para profundizar en la materia y conocer detalladamente el mundo vegetal. Me gusta colaborar con el mantenimiento de espacios verdes, sean públicos o privados. Uno de mis objetivos es tratar la individualidad de cada especie como necesita, y dibujar una harmonia en el conjunto del jardín"
+    "knowme": "Conóceme",
+    "desc": "Soy Eduard Maristany Ramos, jardinero de vocación. Y digo de vocación porqué desde pequeño ya admiraba la naturaleza. Esto me motivó para realizar los estudios en Gestión y Organización de Recursos Naturales y Paisajísticos, en Solsona, para profundizar en la materia y conocer detalladamente el mundo vegetal. Me gusta colaborar con el mantenimiento de espacios verdes, sean públicos o privados. Uno de mis objetivos es tratar la individualidad de cada especie como necesita y dibujar una harmonía en el conjunto del jardín"
   },
   "services": {
     "title": "SERVICIOS",
@@ -37,7 +37,7 @@
       "text": "Poda y mantenimento de jardines"
     },
     "second": {
-      "title": "DISEÑO Y CONSTRUCCIÓN DE JARDÍN",
+      "title": "DISEÑO Y CONSTRUCCIÓN DE JARDINES",
       "text": "Diseño del jardín a tu gusto"
     },
     "third": {
@@ -46,11 +46,11 @@
     },
     "fourth": {
       "title": "FITOSANITARIOS",
-      "text": "Tratamientos fitosanitarios y de herbicidas"
+      "text": "Tratamientos fitosanitarios y herbicidas"
     },
     "fifth": {
       "title": "RIEGO",
-      "text": "Diseño de sistemas de riego automáticos e instalación. Reparación de averias"
+      "text": "Diseño de sistemas de riego automáticos e instalación. Reparación de averías"
     },
     "sixth": {
       "title": "DESBROCE",
