@@ -2,16 +2,16 @@
 <html lang="ca">
 <head>
   <title>EduArt Jardins - Jardiner Igualada</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="EduArt Jardins, el teu jardiner de confiança a Igualada (Anoia). Disseny de jardins, poda, mateniment, sistemes de reg i tractaments fitosanitaris.">
-  <meta name="keywords" content="eduart,eduard,maristany,jardiner,jardinero,jardiners,jardineros,jardi,jardins,igualada, anoia">
-  <meta name="author" content="Eduard Maristany Ramos">
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="EduArt Jardins, el teu jardiner de confiança a Igualada (Anoia). Disseny de jardins, poda, mateniment, sistemes de reg i tractaments fitosanitaris."/>
+  <meta name="keywords" content="eduart,eduard,maristany,jardiner,jardinero,jardiners,jardineros,jardi,jardins,igualada, anoia"/>
+  <meta name="author" content="Eduard Maristany Ramos"/>
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108649704-1"></script>
@@ -34,10 +34,11 @@
   body {
       font: 400 15px/1.8 Lato, sans-serif;
       color: #777;
+      padding-top: 100px;
   }
   h1, h2 {
     margin: 10px 0 30px 0;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-size: 25px;
   }
   h2 {
@@ -45,7 +46,7 @@
   }
   h3, h4 {
       margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
+      letter-spacing: 3px;
       font-size: 20px;
       color: #111;
   }
@@ -71,13 +72,29 @@
   .carousel-caption {
     background: rgba(50, 50, 50, .8);
   }
+  @media screen and (min-width: 768px) {
+    .carousel-caption {
+      background: rgba(50, 50, 50, .8);
+      right: 30% !important;
+      left: 30% !important;
+    }
+  }
   .carousel-caption h3 {
       color: #fff !important;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 767px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
+  }
+  .navbar-header {
+    height: 100px !important;
+  }
+  .navbar-nav>li {
+    padding-top: 24px;
+  }
+  .navbar-toggle {
+    margin-top: 34px;
   }
   .bg-1 {
       background: #2d2d30;
@@ -126,7 +143,7 @@
 }
   #googleMap {
       width: 100%;
-      height: 400px;
+      height: 500px;
   }  
   .navbar {
       font-family: Montserrat, sans-serif;
@@ -148,15 +165,29 @@
       color: #fff !important;
       background-color: #29292c !important;
   }
+  .navbar-collapse {
+    max-height: 390px !important;
+  }
+  .dropdown-menu li a {
+    color: #d5d5d5 !important;
+    font-family: Montserrat, sans-serif;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+  }
+  @media screen and (min-width: 768px) {
+    .navbar-nav li.active a {
+      border-bottom: 5px solid #009933;
+    }
+    .dropdown-menu li a {
+      color: #000 !important;
+    }
+  }
   .navbar-default .navbar-toggle {
       border-color: transparent;
   }
   .open .dropdown-toggle {
       color: #fff;
       background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-      color: #000 !important;
   }
   .dropdown-menu li a:hover {
       background-color: #009933 !important;
@@ -242,12 +273,12 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home" data-i18n="nav.home"></a></li>
-        <li><a href="#who" data-i18n="nav.who"></a></li>
+        <li><a href="#contact" data-i18n="nav.contact"></a></li>
 		<li><a href="#services" data-i18n="nav.services"></a></li>
 		<!--<li><a href="#gallery" data-i18n="nav.gallery"></a></li>-->
-        <li><a href="#contact" data-i18n="nav.contact"></a></li>
+        <li><a href="#who" data-i18n="nav.who"></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-i18n="nav.language"><span class="caret"></span></a>
+          <a id="lang-menu" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-i18n="nav.language"><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#" onclick="i18next.changeLanguage('ca')" data-i18n="nav.catalan"></a></li>
             <li><a href="#" onclick="i18next.changeLanguage('es')" data-i18n="nav.spanish"></a></li>
@@ -270,7 +301,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://www.edinburgh.com.au/assets/homepage/_resampled/CroppedFocusedImageWyIxNjAwIiwiNDAwIiwieSIsMjUyXQ/Ed2016-07C-1600pix-wide-96dpi.jpg" alt="Hosteleria">
+        <img src="https://www.parkhoteladler.de/files/bilder/bilderleiste/parkhotel-adler-freizeit-hotelpark.jpg" alt="Hosteleria">
         <div class="carousel-caption">
           <h1 data-i18n="carousel.first.title"></h1>
           <h2 data-i18n="carousel.first.text"></h2>
@@ -305,11 +336,16 @@
     </a>
 </div>
 
-<!-- Who am i -->
-<div id="who" class="container text-center">
-  <h3 data-i18n="who.title"></h3>
-  <p><em data-i18n="who.knowme"></em></p>
-  <p data-i18n="who.desc"></p>
+<!-- Contact -->
+<div id="contact" class="container">
+  <h3 class="text-center" data-i18n="contact.title"></h3>
+  <div class="row">
+    <div class="col-sm-7 col-sm-offset-4">
+      <a href="tel:610096843"><p><span class="glyphicon glyphicon-phone"></span>  610 09 68 43</p></a>
+      <a href="mailto:eduard.maristany.ramos@gmail.com"><p><span class="glyphicon glyphicon-envelope"></span>  eduard.maristany.ramos@gmail.com</p></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=41.584809,1.621299" target="_blank"><p><span class="glyphicon glyphicon-map-marker"></span>  Igualada, 08700, Barcelona</p></a>
+    </div>
+  </div>
 </div>
 
 <!-- Services -->
@@ -400,16 +436,11 @@
 </div>
 -->
 
-<!-- Contact -->
-<div id="contact" class="container">
-  <h3 class="text-center" data-i18n="contact.title"></h3>
-  <div class="row">
-    <div class="col-sm-7 col-sm-offset-4">
-      <a href="tel:610096843"><p><span class="glyphicon glyphicon-phone"></span>  610 09 68 43</p></a>
-      <a href="mailto:eduard.maristany.ramos@gmail.com"><p><span class="glyphicon glyphicon-envelope"></span>  eduard.maristany.ramos@gmail.com</p></a>
-      <a href="https://www.google.com/maps/search/?api=1&query=41.584809,1.621299" target="_blank"><p><span class="glyphicon glyphicon-map-marker"></span>  Igualada, 08700, Barcelona</p></a>
-    </div>
-  </div>
+<!-- Who am i -->
+<div id="who" class="container text-center">
+  <h3 data-i18n="who.title"></h3>
+  <p><em data-i18n="who.knowme"></em></p>
+  <p data-i18n="who.desc"></p>
 </div>
 
 <!-- myMap callback is on index.js-->

@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "INICIO",
-    "who": "¿QUIÉN SOY?",
+    "who": "SOBRE MI",
     "services": "SERVICIOS",
     "gallery": "GALERÍA",
     "contact": "CONTACTO",
@@ -26,7 +26,7 @@
     "next": "Siguiente"
   },
   "who": {
-    "title": "¿QUIÉN SOY?",
+    "title": "SOBRE MI",
     "knowme": "Conóceme",
     "desc": "Soy Eduard Maristany Ramos, jardinero de vocación. Y digo de vocación porqué desde pequeño ya admiraba la naturaleza. Esto me motivó para realizar los estudios en Gestión y Organización de Recursos Naturales y Paisajísticos, en Solsona, para profundizar en la materia y conocer detalladamente el mundo vegetal. Me gusta colaborar con el mantenimiento de espacios verdes, sean públicos o privados. Uno de mis objetivos es tratar la individualidad de cada especie como necesita y dibujar una harmonía en el conjunto del jardín"
   },

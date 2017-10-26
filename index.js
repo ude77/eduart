@@ -3,7 +3,12 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 
     // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    $(".navbar a, footer a[href='#home']").on('click', function(event) {
+
+        if ($(this)[0].id !== "lang-menu") {
+            $('.navbar-collapse').collapse('hide');
+        }
+
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -13,18 +18,19 @@ $(document).ready(function(){
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: $(hash).offset().top - 40
             }, 900, function(){
-
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
+                $(hash)[0].scrollIntoView();
+                window.scrollBy(0, -40);
             });
         } // End if
     });
 
     $(window).scroll(function() {
         $(".slideanim").each(function(){
-            var pos = $(this).offset().top;
+            var pos = $(this).offset().top - 40;
             var winTop = $(window).scrollTop();
             if (pos < winTop + 600) {
                 $(this).addClass("slide");
